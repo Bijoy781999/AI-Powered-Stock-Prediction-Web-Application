@@ -1,117 +1,165 @@
 # 📈 AI-Powered Stock Market Prediction Web Application
 
-An end-to-end **Deep Learning-based stock prediction system** that leverages **LSTM, GRU, and CNN-LSTM models** with **Explainable AI (SHAP)** to forecast stock prices and provide transparent insights.
+An end-to-end **Deep Learning-based stock prediction system** using **LSTM, GRU, CNN-LSTM + SHAP Explainability**.
 
 ---
 
 ## 🚀 Project Overview
 
-Stock market prediction is highly complex due to **non-linearity, volatility, and temporal dependencies**.  
-This project introduces a **scalable AI system** that:
+This project predicts stock prices using deep learning models and provides:
 
-- Predicts stock prices using Deep Learning models
-- Supports **multi-stock learning with a single model**
-- Provides **interactive visualizations via web application**
-- Integrates **Explainable AI (SHAP)** for transparency
+- 📊 Accurate stock price prediction  
+- 🔄 Multi-stock learning  
+- 📈 Interactive visualizations  
+- 🔍 Explainable AI (SHAP)  
 
 ---
 
 ## 🧠 Models Used
 
-| Model | Description |
-|------|------------|
-| 🔵 LSTM | Captures long-term dependencies in time series |
-| 🟢 GRU | Lightweight alternative with faster convergence |
-| 🟣 CNN-LSTM | Hybrid model for spatial + temporal feature extraction |
+- LSTM (Long Short-Term Memory)
+- GRU (Gated Recurrent Unit)
+- CNN-LSTM (Hybrid Model)
 
 ---
 
-## ⚙️ System Workflow
+## ⚙️ Workflow
 
-1. Data Collection (Yahoo Finance via yfinance)
-2. Data Preprocessing & Normalization
-3. Time-Series Sequence Creation
-4. Model Training (LSTM, GRU, CNN-LSTM)
-5. Evaluation (MSE, RMSE, MAE, R²)
-6. Prediction & Visualization
-7. Explainability using SHAP
+### 🔹 System Pipeline
+
+1. **Data Collection**
+   - Fetch historical stock data using `yfinance`
+
+2. **Data Preprocessing**
+   - Handle missing values  
+   - Normalize data  
+   - Feature selection (closing price)
+
+3. **Sequence Creation**
+   - Convert time-series into supervised format  
+   - Apply sliding window technique  
+
+4. **Model Training**
+   - Train LSTM, GRU, CNN-LSTM models  
+   - Use training & validation datasets  
+
+5. **Model Evaluation**
+   - Metrics: MSE, RMSE, MAE, R² Score  
+
+6. **Prediction**
+   - Generate future stock prices  
+   - Predict direction (Up/Down)
+
+7. **Explainability**
+   - Apply SHAP to understand feature importance  
+
+---
 
 ---
 
 ## 📊 Results & Outputs
 
-### 📉 Actual vs Predicted Prices
-![Actual vs Predicted Prices](OutPuts/Actual vs Predicted.png)
+> ⚠️ NOTE: Images are loaded from GitHub using raw links
 
-### 📊 Multi-Stock Learning
-- Model trained across multiple stocks
-- Improves generalization capability
+---
+
+### 📉 Actual vs Predicted Prices
+
+![Actual vs Predicted](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Actual%20vs%20Predicted.png)
+
+- Strong alignment between predicted & actual prices  
+- Captures trends effectively  
+
+---
+
+### 📊 Multi-Stock Closing Price Trend
+
+![Closing Trend](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Closing%20Price%20Trend.png)
+
+- Shows multiple stock behavior  
+- Improves generalization  
+
+---
 
 ### 🔄 Direction Prediction
-- Predicts upward/downward movement
-- Achieves ~50–55% directional accuracy
+
+![Direction](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Direction%20Movement.png)
+
+- Predicts up/down movement  
+- ~50–55% accuracy  
 
 ---
 
-## 📊 Model Performance
+### 📊 Model Comparison
 
-### 🔹 Single Stock Prediction
-| Model | Performance |
-|------|------------|
-| GRU | ✅ Best performance |
-| LSTM | Good performance |
-| CNN-LSTM | Higher error |
+![Model Comparison](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Model%20Comparison.png)
 
-### 🔹 Multi-Stock Prediction
-| Model | Performance |
-|------|------------|
-| LSTM | ✅ Best performance |
-| GRU | Slightly lower |
-| CNN-LSTM | Less efficient |
+- GRU best for single stock  
+- LSTM best for multi-stock  
 
 ---
 
-## 📉 Error Analysis
+### 📉 Prediction Error Density
 
-- Errors centered around zero → unbiased predictions
-- Occasional spikes during high volatility
-- Stable performance across time
+![Error Density](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Prediction%20Error%20Density.png)
 
----
-
-## 📈 Training Behavior
-
-- Smooth convergence of loss curves
-- Minimal overfitting observed
+- Errors centered around zero  
+- Stable predictions  
 
 ---
 
-## 🔍 Explainable AI (SHAP)
+### 📉 Residual Errors
 
-- Explains contribution of historical inputs
-- Improves transparency of predictions
-- Highlights feature importance in time-series data
+![Residual](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Residual%20Error.png)
+
+- Shows volatility spikes  
+- No major bias  
+
+---
+
+### 📈 Rolling Directional Accuracy
+
+![Rolling Accuracy](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Rolling%20Direction.png)
+
+- Fluctuates due to market volatility  
+
+---
+
+### 🔍 SHAP Explainability
+
+![SHAP](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/SHAP%20Summary.png)
+
+- Shows feature importance  
+- Improves interpretability  
+
+---
+
+### 📉 Training vs Validation Loss
+
+![Loss](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Training%20and%20Validation.png)
+
+- Smooth convergence  
+- Minimal overfitting  
 
 ---
 
 ## 📌 Key Insights
 
-- GRU performs best for **single-stock prediction**
-- LSTM performs best for **multi-stock prediction**
-- Multi-stock learning improves scalability
-- SHAP enhances interpretability
-- Direction prediction remains challenging
+- ✅ GRU performs best for single-stock prediction  
+- ✅ LSTM performs best for multi-stock prediction  
+- 🔍 SHAP improves model interpretability  
+- ⚠️ Direction prediction remains challenging (~50%)  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python (NumPy, Pandas, Matplotlib)
-- TensorFlow / Keras
-- yfinance API
-- SHAP (Explainable AI)
-- Flask (Web App)
+- Python  
+- TensorFlow / Keras  
+- yfinance  
+- SHAP  
+- Flask  
 
 ---
 
-## 📂 Repository Structure
+## 📂 Project Structure
