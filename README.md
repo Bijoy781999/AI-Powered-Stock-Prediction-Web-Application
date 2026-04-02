@@ -41,7 +41,7 @@ This project introduces a **scalable AI system** that:
 ## 📊 Results & Outputs
 
 ### 📉 Actual vs Predicted Prices
-![Actual vs Predicted Prices]utPuts/Actual vs Predicted.png
+![Actual vs Predicted Prices]OutPuts/Actual vs Predicted.png
 
 ### 📊 Multi-Stock Learning
 - Model trained across multiple stocks
