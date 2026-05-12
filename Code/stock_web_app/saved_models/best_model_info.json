@@ -1,0 +1,23 @@
+{
+  "best_model": "iTransformer",
+  "direction_scale": 0.006522245705127716,
+  "window": 64,
+  "n_features": 13,
+  "feature_columns": [
+    "Close_Scaled",
+    "Return_Scaled",
+    "Momentum_3",
+    "Momentum_5",
+    "Momentum_10",
+    "Return_Mean_5",
+    "Return_Mean_10",
+    "Return_Std_5",
+    "Return_Std_10",
+    "Price_MA_Diff_5",
+    "Price_MA_Diff_10",
+    "Price_MA_Diff_20",
+    "RSI_14"
+  ],
+  "d_model": 32,
+  "num_layers": 3
+}
