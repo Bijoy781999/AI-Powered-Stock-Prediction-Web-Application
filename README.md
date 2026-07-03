@@ -1,165 +1,1238 @@
-# 📈 AI-Powered Stock Market Prediction Web Application
+# 🚀 AI-Powered Stock Market Prediction Web Application
 
-An end-to-end **Deep Learning-based stock prediction system** using **LSTM, GRU, CNN-LSTM + SHAP Explainability**.
+> **An End-to-End Intelligent Stock Market Forecasting System using Deep Learning, State-Space Models, and Modern Web Technologies**
 
----
+<p align="center">
 
-## 🚀 Project Overview
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Traditional%20Models-orange?logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-Advanced%20Models-red?logo=pytorch&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-Web%20Application-009688?logo=fastapi&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-Frontend-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-UI-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Interactive%20Dashboard-F7DF1E?logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-This project predicts stock prices using deep learning models and provides:
-
-- 📊 Accurate stock price prediction  
-- 🔄 Multi-stock learning  
-- 📈 Interactive visualizations  
-- 🔍 Explainable AI (SHAP)  
-
----
-
-## 🧠 Models Used
-
-- LSTM (Long Short-Term Memory)
-- GRU (Gated Recurrent Unit)
-- CNN-LSTM (Hybrid Model)
+</p>
 
 ---
 
-## ⚙️ Workflow
+<p align="center">
 
-### 🔹 System Pipeline
+### 📈 Forecast Smarter • 🤖 Compare AI Models • 🌐 Interactive Web Application
 
-1. **Data Collection**
-   - Fetch historical stock data using `yfinance`
-
-2. **Data Preprocessing**
-   - Handle missing values  
-   - Normalize data  
-   - Feature selection (closing price)
-
-3. **Sequence Creation**
-   - Convert time-series into supervised format  
-   - Apply sliding window technique  
-
-4. **Model Training**
-   - Train LSTM, GRU, CNN-LSTM models  
-   - Use training & validation datasets  
-
-5. **Model Evaluation**
-   - Metrics: MSE, RMSE, MAE, R² Score  
-
-6. **Prediction**
-   - Generate future stock prices  
-   - Predict direction (Up/Down)
-
-7. **Explainability**
-   - Apply SHAP to understand feature importance  
+</p>
 
 ---
 
----
+# 📌 Overview
 
-## 📊 Results & Outputs
+Stock market forecasting remains one of the most challenging tasks in financial analytics due to the nonlinear, dynamic, and highly volatile nature of stock prices.
 
-> ⚠️ NOTE: Images are loaded from GitHub using raw links
+This repository presents an **end-to-end AI-powered Stock Market Prediction System** that explores the evolution of deep learning models—from traditional recurrent neural networks to modern State-Space architectures—and deploys the best-performing model through an interactive web application.
 
----
+The project demonstrates the complete machine learning lifecycle:
 
-### 📉 Actual vs Predicted Prices
-
-![Actual vs Predicted](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Actual%20vs%20Predicted.png)
-
-- Strong alignment between predicted & actual prices  
-- Captures trends effectively  
-
----
-
-### 📊 Multi-Stock Closing Price Trend
-
-![Closing Trend](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Closing%20Price%20Trend.png)
-
-- Shows multiple stock behavior  
-- Improves generalization  
+- 📊 Data Collection
+- 🧹 Data Preprocessing
+- ⚙️ Feature Engineering
+- 🧠 Deep Learning Model Development
+- 📈 Performance Evaluation
+- 📉 Explainability Analysis
+- 🚀 Model Deployment
+- 🌐 Interactive Web Dashboard
 
 ---
 
-### 🔄 Direction Prediction
+# 🎯 Project Objectives
 
-![Direction](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Direction%20Movement.png)
+The primary objectives of this project are:
 
-- Predicts up/down movement  
-- ~50–55% accuracy  
-
----
-
-### 📊 Model Comparison
-
-![Model Comparison](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Model%20Comparison.png)
-
-- GRU best for single stock  
-- LSTM best for multi-stock  
+- Predict future stock prices using Deep Learning.
+- Compare multiple neural network architectures.
+- Study the evolution from traditional sequence models to advanced forecasting architectures.
+- Evaluate prediction accuracy using multiple regression metrics.
+- Analyze directional movement prediction.
+- Deploy the best-performing model as an interactive web application.
+- Build a scalable forecasting framework supporting multiple stock datasets.
 
 ---
 
-### 📉 Prediction Error Density
+# 🚀 Project Evolution
 
-![Error Density](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Prediction%20Error%20Density.png)
+The project is divided into two major phases.
 
-- Errors centered around zero  
-- Stable predictions  
+## 📘 Phase 1 — Traditional Deep Learning
 
----
+This phase focuses on widely adopted recurrent neural network architectures.
 
-### 📉 Residual Errors
+### Models
 
-![Residual](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Residual%20Error.png)
+- Long Short-Term Memory (LSTM)
+- Gated Recurrent Unit (GRU)
+- CNN-LSTM Hybrid
 
-- Shows volatility spikes  
-- No major bias  
+This module demonstrates:
 
----
-
-### 📈 Rolling Directional Accuracy
-
-![Rolling Accuracy](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Rolling%20Direction.png)
-
-- Fluctuates due to market volatility  
+- Historical stock prediction
+- Model comparison
+- Training visualization
+- SHAP explainability
+- Performance evaluation
 
 ---
 
-### 🔍 SHAP Explainability
+## 📗 Phase 2 — Advanced Deep Learning
 
-![SHAP](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/SHAP%20Summary.png)
+The second phase introduces modern sequence forecasting architectures.
 
-- Shows feature importance  
-- Improves interpretability  
+### Models
 
----
+- TimeMachine (State-Space 4-Mamba)
+- iTransformer (Inverted Transformer)
 
-### 📉 Training vs Validation Loss
+Additional features include:
 
-![Loss](https://raw.githubusercontent.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/main/OutPuts/Training%20and%20Validation.png)
-
-- Smooth convergence  
-- Minimal overfitting  
-
----
-
-## 📌 Key Insights
-
-- ✅ GRU performs best for single-stock prediction  
-- ✅ LSTM performs best for multi-stock prediction  
-- 🔍 SHAP improves model interpretability  
-- ⚠️ Direction prediction remains challenging (~50%)  
+- Automatic best model selection
+- Dynamic model loading
+- FastAPI deployment
+- Interactive dashboard
+- Live Yahoo Finance integration
+- Offline dataset fallback
 
 ---
 
-## 🛠️ Tech Stack
+# 🌟 Key Features
 
-- Python  
-- TensorFlow / Keras  
-- yfinance  
-- SHAP  
-- Flask  
+## 🤖 Artificial Intelligence
+
+- Multiple Deep Learning Architectures
+- Comparative Model Analysis
+- Time-Series Forecasting
+- Feature Engineering
+- Explainable AI
+- Regression Analysis
+- Direction Prediction
 
 ---
 
-## 📂 Project Structure
+## 📊 Data Analysis
+
+- Multi-stock prediction
+- Historical stock analysis
+- Technical indicator generation
+- Rolling window forecasting
+- Model evaluation metrics
+
+---
+
+## 🌐 Web Application
+
+- FastAPI Backend
+- REST API
+- Interactive Dashboard
+- Responsive UI
+- Searchable Stock Selection
+- Live Stock Data
+- Automatic Model Selection
+- Dynamic Prediction Visualization
+
+---
+
+# ⚡ Highlights
+
+✅ Traditional Deep Learning Models
+
+✅ Advanced State-Space Models
+
+✅ Interactive Web Application
+
+✅ Multi-Dataset Support
+
+✅ Dynamic Model Loading
+
+✅ Live Market Data Integration
+
+✅ Explainability using SHAP
+
+✅ Interactive Performance Charts
+
+✅ Professional Project Structure
+
+---
+
+# 📂 Quick Navigation
+
+| Folder | Description |
+|---------|-------------|
+| 📘 **traditional_models/** | LSTM, GRU, CNN-LSTM implementation |
+| 📗 **advanced_models/** | TimeMachine, iTransformer & Web Application |
+| 📄 **docs/** | Project report and documentation |
+| 📊 **screenshots/** | Web application screenshots |
+| 📁 **requirements.txt** | Project dependencies |
+| 📄 **LICENSE** | MIT License |
+
+---
+
+> **This repository demonstrates the complete evolution of AI-based stock market forecasting—from traditional recurrent neural networks to advanced State-Space deep learning architectures with real-world deployment.**
+
+---
+
+# 🗂 Repository Structure
+
+```text
+AI-Powered-Stock-Prediction-Web-Application
+│
+├── 📂 traditional_models/
+│   ├── 📓 Evolution_stock_prediction.ipynb
+│   ├── 📄 tickers.csv
+│   ├── 📂 sample_dataset/
+│   ├── 📂 saved_models/
+│   ├── 📂 results/
+│   └── 📄 README.md
+│
+├── 📂 advanced_models/
+│   ├── 📓 stock-market-forecasting.ipynb
+│   ├── 🐍 backend.py
+│   ├── 🌐 index.html
+│   ├── 🎨 style.css
+│   ├── ⚡ app.js
+│   ├── 📂 data/
+│   ├── 📂 saved_models/
+│   ├── 📂 results/
+│   └── 📄 README.md
+│
+├── 📂 docs/
+│   ├── 📑 Project Report
+│   └── 🖼 Architecture Diagram
+│   
+│
+├── 📂 screenshots/
+│   ├── Home.png
+│   ├── Prediction.png
+│   ├── Charts.png
+│   └── Mobile.png
+│   
+│
+├── 📄 requirements.txt
+├── 📄 .gitignore
+├── 📄 LICENSE
+└── 📄 README.md
+```
+
+---
+
+# 🔄 Complete Project Workflow
+
+```text
+                Historical Stock Data
+                         │
+                         ▼
+               Data Collection (Yahoo Finance)
+                         │
+                         ▼
+                 Data Cleaning & Processing
+                         │
+                         ▼
+                 Feature Engineering
+                         │
+          ┌──────────────┴──────────────┐
+          │                             │
+          ▼                             ▼
+Traditional Deep Learning       Advanced Deep Learning
+     (Phase-I)                     (Phase-II)
+          │                             │
+ ┌────────┼────────┐          ┌──────────┴──────────┐
+ ▼        ▼        ▼          ▼                     ▼
+LSTM     GRU    CNN-LSTM   TimeMachine         iTransformer
+                               │                     │
+                               └──────────┬──────────┘
+                                          ▼
+                               Performance Evaluation
+                                          │
+                                          ▼
+                              Best Model Selection
+                                          │
+                                          ▼
+                             FastAPI Web Deployment
+                                          │
+                                          ▼
+                          Interactive Prediction Dashboard
+```
+
+---
+
+# 🏗 System Architecture
+
+```text
+                 User
+                  │
+                  ▼
+         Interactive Dashboard
+      (HTML • CSS • JavaScript)
+                  │
+                  ▼
+            FastAPI Backend
+                  │
+      ┌───────────┼───────────┐
+      │                       │
+      ▼                       ▼
+ Local Historical Data   Live Yahoo Finance
+      │                       │
+      └───────────┬───────────┘
+                  ▼
+         Feature Engineering
+                  │
+                  ▼
+        Automatic Model Selection
+                  │
+                  ▼
+        TimeMachine / iTransformer
+                  │
+                  ▼
+          Stock Price Prediction
+                  │
+                  ▼
+      Interactive Performance Charts
+```
+
+---
+
+# 📊 Dataset
+
+The project utilizes multiple historical stock market datasets collected from **Yahoo Finance**.
+
+### Included Datasets
+
+| Dataset | Description |
+|----------|-------------|
+| 🇺🇸 US500 | Major US-listed companies |
+| 🇮🇳 NIFTY50 | Top Indian stock market companies |
+| 🌍 7000Stocks | Large-scale international stock dataset |
+
+---
+
+## Dataset Attributes
+
+Each dataset contains the following information:
+
+| Feature | Description |
+|----------|-------------|
+| Date | Trading Date |
+| Open | Opening Price |
+| High | Highest Price |
+| Low | Lowest Price |
+| Close | Closing Price |
+| Volume | Trading Volume |
+
+---
+
+## Dataset Note
+
+> Due to GitHub storage limitations, the complete datasets are **not included** in this repository.
+
+Instead, this repository provides:
+
+- Sample datasets
+- Stock ticker list
+- Data preprocessing pipeline
+
+The complete datasets can be regenerated using **Yahoo Finance (`yfinance`)**.
+
+---
+
+# ⚙️ Technology Stack
+
+## Programming Languages
+
+| Technology | Purpose |
+|------------|---------|
+| Python | AI Model Development |
+| JavaScript | Interactive Dashboard |
+| HTML5 | Web Interface |
+| CSS3 | User Interface Design |
+
+---
+
+## Machine Learning & Deep Learning
+
+| Library | Purpose |
+|----------|---------|
+| TensorFlow | Traditional Deep Learning Models |
+| Keras | LSTM, GRU & CNN-LSTM |
+| PyTorch | Advanced Deep Learning Models |
+| Scikit-learn | Data Preprocessing & Evaluation |
+
+---
+
+## Backend Technologies
+
+| Technology | Purpose |
+|------------|---------|
+| FastAPI | REST API |
+| Uvicorn | ASGI Server |
+
+---
+
+## Data Processing
+
+| Library | Purpose |
+|----------|---------|
+| NumPy | Numerical Computing |
+| Pandas | Data Manipulation |
+| yfinance | Live Stock Data |
+
+---
+
+## Visualization
+
+| Library | Purpose |
+|----------|---------|
+| Matplotlib | Data Visualization |
+| SHAP | Explainable AI |
+| Chart.js | Interactive Dashboard Charts |
+
+---
+
+# 📈 Model Evaluation Metrics
+
+The models are evaluated using multiple regression and directional forecasting metrics.
+
+| Metric | Description |
+|---------|-------------|
+| MSE | Mean Squared Error |
+| RMSE | Root Mean Squared Error |
+| MAE | Mean Absolute Error |
+| R² Score | Coefficient of Determination |
+| Direction Accuracy | Trend Prediction Accuracy |
+| Rolling Direction Accuracy | Short-term Trend Evaluation |
+| Residual Error | Prediction Error Analysis |
+| Prediction Error Density | Error Distribution Analysis |
+
+---
+
+# 📊 Generated Results
+
+The project generates multiple visualization outputs to evaluate model performance.
+
+### Traditional Models
+
+- 📈 Actual vs Predicted Price
+- 📉 Closing Price Trend
+- 📊 Direction Movement
+- 📉 Residual Error
+- 📈 Training & Validation Curve
+- 📊 SHAP Summary
+- 📈 Model Comparison
+
+---
+
+### Advanced Models
+
+- 📈 Actual vs Predicted Price
+- 📉 Residual Error
+- 📊 Rolling Direction Accuracy
+- 📈 Prediction Error Density
+- 📉 Actual vs Predicted Direction
+- 📊 Interactive Dashboard
+- 📈 Live Stock Forecasting
+
+---
+
+# 📘 Traditional Deep Learning Models
+
+The **Traditional Models** module explores three widely used deep learning architectures for stock market forecasting.
+
+These models establish a strong baseline for sequential financial time-series prediction and provide insights into how different recurrent neural networks learn market trends.
+
+## Implemented Models
+
+| Model | Description |
+|--------|-------------|
+| 🧠 LSTM | Long Short-Term Memory Network for long-term dependency learning |
+| ⚡ GRU | Gated Recurrent Unit with fewer parameters and faster convergence |
+| 🔀 CNN-LSTM | Hybrid architecture combining CNN feature extraction with LSTM sequence learning |
+
+---
+
+## Traditional Model Pipeline
+
+```text
+Historical Stock Data
+        │
+        ▼
+Data Preprocessing
+        │
+        ▼
+Feature Scaling
+        │
+        ▼
+Sequence Generation
+        │
+        ▼
+LSTM / GRU / CNN-LSTM
+        │
+        ▼
+Performance Evaluation
+        │
+        ▼
+Model Comparison
+        │
+        ▼
+Explainability (SHAP)
+```
+
+---
+
+## Traditional Model Features
+
+- Historical stock price prediction
+- Multi-stock forecasting
+- Sliding window sequence generation
+- Model comparison
+- Training visualization
+- SHAP Explainability
+- Error analysis
+- Direction movement analysis
+
+📖 **More details:** `traditional_models/README.md`
+
+---
+
+# 🚀 Advanced Deep Learning Models
+
+The **Advanced Models** module introduces modern sequence modeling architectures specifically designed for long-range time-series forecasting.
+
+These models improve forecasting capability while supporting deployment through an interactive web application.
+
+---
+
+## Implemented Models
+
+| Model | Description |
+|--------|-------------|
+| 🚀 TimeMachine | State-Space (4-Mamba) architecture for efficient long-sequence forecasting |
+| 🔷 iTransformer | Inverted Transformer architecture for multivariate time-series prediction |
+
+---
+
+## Advanced Model Pipeline
+
+```text
+Historical Stock Data
+        │
+        ▼
+Feature Engineering
+        │
+        ▼
+RevIN Normalization
+        │
+        ▼
+TimeMachine / iTransformer
+        │
+        ▼
+Performance Evaluation
+        │
+        ▼
+Best Model Selection
+        │
+        ▼
+FastAPI Deployment
+        │
+        ▼
+Interactive Dashboard
+```
+
+---
+
+## Advanced Model Features
+
+- Time-Series Forecasting
+- Automatic Model Selection
+- Dynamic Model Loading
+- Live Yahoo Finance Integration
+- Offline Dataset Support
+- Interactive Prediction Dashboard
+- REST API Deployment
+- Interactive Charts
+
+📖 **More details:** `advanced_models/README.md`
+
+---
+
+# 🌐 Interactive Web Application
+
+The project includes a modern web application for real-time stock prediction and visualization.
+
+## Backend
+
+- FastAPI
+- REST API
+- Dynamic Model Loading
+- Live Data Retrieval
+- Prediction API
+
+---
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+- Chart.js
+
+---
+
+## Dashboard Features
+
+- 🔍 Searchable Stock Selector
+- 📈 Stock Price Prediction
+- 📉 Actual vs Predicted Price
+- 📊 Prediction Summary Cards
+- 📈 Rolling Direction Accuracy
+- 📉 Residual Error Analysis
+- 📊 Prediction Error Density
+- 📈 Direction Comparison Chart
+- ⚡ Responsive User Interface
+
+---
+
+# 📊 Model Comparison
+
+| Feature | Traditional Models | Advanced Models |
+|----------|:-----------------:|:---------------:|
+| LSTM | ✅ | ❌ |
+| GRU | ✅ | ❌ |
+| CNN-LSTM | ✅ | ❌ |
+| TimeMachine | ❌ | ✅ |
+| iTransformer | ❌ | ✅ |
+| Multi-stock Prediction | ✅ | ✅ |
+| SHAP Explainability | ✅ | ✅ |
+| Live Stock Data | ❌ | ✅ |
+| FastAPI Deployment | ❌ | ✅ |
+| Interactive Dashboard | ❌ | ✅ |
+| Dynamic Model Selection | ❌ | ✅ |
+| REST API | ❌ | ✅ |
+
+---
+
+# 📊 Results
+
+Both implementations generate comprehensive evaluation results.
+
+## Traditional Models
+
+- Actual vs Predicted Price
+- Closing Price Trend
+- Model Comparison
+- Training & Validation Loss
+- Residual Error
+- Direction Movement
+- SHAP Summary
+- Prediction Error Analysis
+
+---
+
+## Advanced Models
+
+- Actual vs Predicted Price
+- Residual Error
+- Rolling Direction Accuracy
+- Prediction Error Density
+- Actual vs Predicted Direction
+- Interactive Dashboard
+- Live Forecast Visualization
+
+---
+
+# 📄 Documentation
+
+The repository includes complete project documentation.
+
+## Available Documents
+
+- 📘 Traditional Models Documentation
+- 📗 Advanced Models Documentation
+- 📄 Project Report
+- 🏗 System Architecture
+- 📊 Experimental Results
+- 📈 Performance Evaluation
+- 🖼 Application Screenshots
+
+Each module contains its own dedicated `README.md` with detailed implementation information, usage instructions, and evaluation results.
+
+---
+
+# 🎯 Why This Repository?
+
+This repository demonstrates the progression from **traditional recurrent neural networks** to **modern State-Space and Transformer architectures**, culminating in a deployable AI-powered stock forecasting web application.
+
+It combines:
+
+- 📚 Deep Learning Research
+- 📊 Financial Time-Series Analysis
+- 🤖 Artificial Intelligence
+- 🌐 Web Development
+- 🚀 Model Deployment
+- 📈 Interactive Data Visualization
+
+making it a complete end-to-end machine learning project suitable for academic, research, and portfolio purposes.
+
+---
+
+# 🚀 Getting Started
+
+Follow the steps below to set up and run the project on your local machine.
+
+---
+
+# 📋 Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+| Software | Version |
+|----------|----------|
+| Python | 3.10 or later |
+| Git | Latest |
+| Jupyter Notebook | Latest |
+| Visual Studio Code *(Recommended)* | Latest |
+
+---
+
+# 📥 Clone the Repository
+
+```bash
+git clone https://github.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application.git
+```
+
+Move into the project directory.
+
+```bash
+cd AI-Powered-Stock-Prediction-Web-Application
+```
+
+---
+
+# 📦 Install Dependencies
+
+Install all required Python libraries.
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# 📂 Project Modules
+
+The repository consists of two independent implementations.
+
+## 📘 Traditional Models
+
+Location
+
+```text
+traditional_models/
+```
+
+Contains
+
+- LSTM
+- GRU
+- CNN-LSTM
+
+---
+
+## 📗 Advanced Models
+
+Location
+
+```text
+advanced_models/
+```
+
+Contains
+
+- TimeMachine
+- iTransformer
+- FastAPI Backend
+- Interactive Dashboard
+
+---
+
+# ▶ Running Traditional Models
+
+Navigate to
+
+```text
+traditional_models/
+```
+
+Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open
+
+```text
+Evolution_stock_prediction.ipynb
+```
+
+Run all notebook cells sequentially.
+
+The notebook will
+
+- Load datasets
+- Preprocess data
+- Train models
+- Compare performance
+- Generate evaluation plots
+- Save trained models
+
+---
+
+# ▶ Running Advanced Models
+
+Navigate to
+
+```text
+advanced_models/
+```
+
+Open
+
+```text
+stock-market-forecasting.ipynb
+```
+
+Run all notebook cells.
+
+The notebook will
+
+- Load datasets
+- Perform feature engineering
+- Train TimeMachine
+- Train iTransformer
+- Compare performance
+- Save the best model
+
+---
+
+# 🌐 Running the Web Application
+
+Navigate to
+
+```text
+advanced_models/
+```
+
+Start the FastAPI server
+
+```bash
+uvicorn backend:app --reload
+```
+
+or
+
+```bash
+python backend.py
+```
+
+Once the server starts successfully, open your browser and visit
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# 💻 Using the Dashboard
+
+The web application allows users to
+
+- 🔍 Search available stocks
+- 📈 Generate stock price predictions
+- 📉 Compare actual vs predicted prices
+- 📊 Analyze prediction errors
+- 📈 View rolling direction accuracy
+- 📉 Analyze residual errors
+- 📊 Explore interactive charts
+
+---
+
+# 📊 Generated Outputs
+
+## Traditional Models
+
+Running the notebook produces
+
+- Actual vs Predicted Price
+- Closing Price Trend
+- Direction Movement
+- Training & Validation Curve
+- Residual Error
+- Prediction Error Density
+- SHAP Summary
+- Model Comparison
+
+---
+
+## Advanced Models
+
+Running the notebook generates
+
+- Actual vs Predicted Price
+- Residual Error
+- Rolling Direction Accuracy
+- Prediction Error Density
+- Actual vs Predicted Direction
+- Interactive Dashboard
+- Best Model Information
+
+---
+
+# 📁 Saved Models
+
+Trained models are stored inside
+
+```text
+traditional_models/saved_models/
+```
+
+and
+
+```text
+advanced_models/saved_models/
+```
+
+These folders contain the trained weights generated after model training.
+
+> **Note:** Large model files may not be included in the repository because of GitHub's file size limitations.
+
+---
+
+# 📊 Results
+
+All generated plots and evaluation figures are available inside
+
+```text
+traditional_models/results/
+```
+
+and
+
+```text
+advanced_models/results/
+```
+
+These include
+
+- Prediction graphs
+- Training curves
+- Error analysis
+- Model comparison
+- SHAP visualizations
+- Dashboard screenshots
+
+---
+
+# 📂 Dataset Setup
+
+This project uses historical stock market data.
+
+Datasets supported include
+
+- US500
+- NIFTY50
+- 7000Stocks
+
+The repository includes sample datasets for demonstration purposes.
+
+If you wish to reproduce the experiments with the complete datasets, download historical market data using **Yahoo Finance (yfinance)** and place the files inside the corresponding `data/` directory.
+
+---
+
+# 📌 Project Execution Flow
+
+```text
+Clone Repository
+        │
+        ▼
+Install Dependencies
+        │
+        ▼
+Choose Project Module
+        │
+        ├──────────────┐
+        ▼              ▼
+Traditional      Advanced
+   Models          Models
+        │              │
+        ▼              ▼
+ Train Models   Train Models
+        │              │
+        └──────┬───────┘
+               ▼
+       Performance Analysis
+               ▼
+       Save Trained Models
+               ▼
+      Launch Web Application
+               ▼
+        Predict Stock Prices
+```
+
+---
+
+# 📖 Additional Documentation
+
+Each module contains its own dedicated documentation.
+
+| Module | Documentation |
+|----------|--------------|
+| 📘 Traditional Models | `traditional_models/README.md` |
+| 📗 Advanced Models | `advanced_models/README.md` |
+| 📄 Project Report | `docs/` |
+| 📊 Experimental Results | `results/` |
+| 📸 Screenshots | `screenshots/` |
+
+For implementation details, datasets, model architecture, and experimental results, refer to the corresponding module documentation.
+
+---
+
+# 🤝 Contributing
+
+Contributions are always welcome!
+
+If you have ideas for improving this project, fixing bugs, or adding new features, feel free to contribute.
+
+## How to Contribute
+
+1. Fork this repository.
+2. Create a new feature branch.
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add your feature"
+```
+
+4. Push to your branch.
+
+```bash
+git push origin feature/your-feature-name
+```
+
+5. Open a Pull Request.
+
+---
+
+# 🔮 Future Improvements
+
+This project can be extended with several advanced features, including:
+
+## 🤖 Artificial Intelligence
+
+- Transformer-based forecasting models
+- Temporal Fusion Transformer (TFT)
+- PatchTST
+- Informer
+- Autoformer
+- FEDformer
+- TimesNet
+
+---
+
+## 📈 Financial Analysis
+
+- Multi-step stock forecasting
+- Portfolio optimization
+- Risk analysis
+- Volatility prediction
+- Market trend classification
+- Sector-wise forecasting
+
+---
+
+## 📰 Sentiment Analysis
+
+- Financial News Analysis
+- Twitter/X Sentiment
+- Reddit Market Sentiment
+- Economic Indicator Integration
+
+---
+
+## 🌐 Web Application
+
+- User Authentication
+- Personalized Dashboard
+- Watchlist Management
+- Portfolio Tracking
+- Cloud Deployment
+- Docker Support
+- Real-time WebSocket Updates
+- Mobile Responsive Improvements
+
+---
+
+## ☁ Deployment
+
+- Docker Containerization
+- AWS Deployment
+- Microsoft Azure
+- Google Cloud Platform
+- CI/CD Pipeline
+- Kubernetes
+
+---
+
+# 📚 References
+
+The implementation is inspired by concepts from the following areas:
+
+- Deep Learning for Time-Series Forecasting
+- Recurrent Neural Networks (RNN)
+- Long Short-Term Memory (LSTM)
+- Gated Recurrent Unit (GRU)
+- CNN-LSTM Hybrid Networks
+- State-Space Models (Mamba)
+- Transformer-based Time-Series Forecasting
+- Explainable Artificial Intelligence (SHAP)
+- Financial Time-Series Analysis
+
+---
+
+# 🙏 Acknowledgements
+
+Special thanks to:
+
+- JIS College of Engineering
+- Department of Computer Science & Technology
+- Faculty members and mentors for their guidance
+- Open-source community
+- Yahoo Finance for historical market data
+- TensorFlow Community
+- PyTorch Community
+- FastAPI Community
+
+Their resources and contributions made this project possible.
+
+---
+
+# 👨‍💻 Author
+
+## Bijoy Bhadra
+
+**B.Tech in Computer Science & Technology**
+
+JIS College of Engineering
+
+### Areas of Interest
+
+- Artificial Intelligence
+- Machine Learning
+- Deep Learning
+- Financial Time-Series Forecasting
+- Explainable AI
+- Computer Vision
+- Natural Language Processing
+
+---
+
+# 📬 Contact
+
+If you have any questions, suggestions, or collaboration opportunities, feel free to reach out.
+
+**GitHub**
+
+```
+https://github.com/Bijoy781999
+```
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+
+- Use
+- Modify
+- Share
+- Distribute
+
+while preserving the original license.
+
+See the **LICENSE** file for complete details.
+
+---
+
+# 📖 Citation
+
+If you use this repository for academic research or educational purposes, please cite it appropriately.
+
+Example:
+
+```text
+Bijoy Bhadra.
+AI-Powered Stock Market Prediction Web Application.
+GitHub Repository.
+2026.
+```
+
+---
+
+# 📊 Repository Summary
+
+| Category | Details |
+|----------|----------|
+| Domain | Stock Market Prediction |
+| Type | End-to-End AI Project |
+| Models | LSTM, GRU, CNN-LSTM, TimeMachine, iTransformer |
+| Backend | FastAPI |
+| Frontend | HTML, CSS, JavaScript |
+| Frameworks | TensorFlow, Keras, PyTorch |
+| Data Source | Yahoo Finance |
+| Evaluation | Regression & Direction Prediction |
+| Explainability | SHAP |
+| Deployment | FastAPI Web Application |
+
+---
+
+# 🌟 If You Like This Project
+
+If you found this repository useful, please consider:
+
+⭐ Starring the repository
+
+🍴 Forking the project
+
+🛠 Contributing to future improvements
+
+📢 Sharing it with others
+
+Your support motivates future development and improvements.
+
+---
+
+<div align="center">
+
+# ⭐ Thank You for Visiting ⭐
+
+### AI-Powered Stock Market Prediction Web Application
+
+**Developed with ❤️ using Artificial Intelligence, Deep Learning, and Modern Web Technologies**
+
+**Happy Coding! 🚀**
+
+</div>
+
+---
