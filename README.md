@@ -731,9 +731,7 @@ The repository consists of two independent implementations.
 
 Location
 
-```text
-traditional_models/
-```
+[traditional_models/](traditional_models/)
 
 Contains
 
