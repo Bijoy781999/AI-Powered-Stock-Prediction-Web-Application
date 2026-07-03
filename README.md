@@ -495,7 +495,7 @@ Explainability (SHAP)
 - Error analysis
 - Direction movement analysis
 
-📖 **More details:** `traditional_models/README.md`
+📖 **More details:** [traditional_models/README.md](traditional_models/README.md)
 
 ---
 
@@ -556,7 +556,7 @@ Interactive Dashboard
 - REST API Deployment
 - Interactive Charts
 
-📖 **More details:** `advanced_models/README.md`
+📖 **More details:** [advanced_models/README.md](advanced_models/README.md)
 
 ---
 
@@ -747,9 +747,7 @@ Contains
 
 Location
 
-```text
-advanced_models/
-```
+[advanced_models/](advanced_models/)
 
 Contains
 
@@ -764,9 +762,7 @@ Contains
 
 Navigate to
 
-```text
-traditional_models/
-```
+[traditional_models/](traditional_models/)
 
 Launch Jupyter Notebook
 
@@ -797,9 +793,7 @@ The notebook will
 
 Navigate to
 
-```text
-advanced_models/
-```
+[advanced_models/](advanced_models/)
 
 Open
 
@@ -824,9 +818,7 @@ The notebook will
 
 Navigate to
 
-```text
-advanced_models/
-```
+[advanced_models/](advanced_models/)
 
 Start the FastAPI server
 
@@ -917,15 +909,11 @@ These folders contain the trained weights generated after model training.
 
 All generated plots and evaluation figures are available inside
 
-```text
-traditional_models/results/
-```
+[traditional_models/results/](traditional_models/results/)
 
 and
 
-```text
-advanced_models/results/
-```
+[advanced_models/results/](advanced_models/results/)
 
 These include
 
@@ -992,11 +980,11 @@ Each module contains its own dedicated documentation.
 
 | Module | Documentation |
 |----------|--------------|
-| 📘 Traditional Models | `traditional_models/README.md` |
-| 📗 Advanced Models | `advanced_models/README.md` |
-| 📄 Project Report | `docs/` |
-| 📊 Experimental Results | `results/` |
-| 📸 Screenshots | `screenshots/` |
+| 📘 Traditional Models | [traditional_models/README.md](traditional_models/README.md) |
+| 📗 Advanced Models | [advanced_models/README.md](advanced_models/README.md) |
+| 📄 Project Report | [docs/](docs/) |
+| 📊 Experimental Results | [results/](results/) |
+| 📸 Screenshots | [screenshots/](screenshots/) |
 
 For implementation details, datasets, model architecture, and experimental results, refer to the corresponding module documentation.
 
