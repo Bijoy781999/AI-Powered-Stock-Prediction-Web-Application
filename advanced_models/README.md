@@ -173,7 +173,7 @@ Users can:
 ## 1. Clone the repository
 
 ```bash
-git clone <https://github.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application>
+git clone <https://github.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/tree/main/advanced_models>
 ```
 
 ## 2. Install dependencies
