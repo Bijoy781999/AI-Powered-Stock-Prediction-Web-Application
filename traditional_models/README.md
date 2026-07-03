@@ -219,7 +219,7 @@ These results provide a comprehensive evaluation of all implemented models.
 ## Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Bijoy781999/AI-Powered-Stock-Prediction-Web-Application/tree/main/traditional_models>
 ```
 
 ## Install dependencies
