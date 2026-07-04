@@ -300,44 +300,54 @@ LSTM     GRU    CNN-LSTM   TimeMachine         iTransformer
 
 # 📊 Dataset
 
-The project utilizes multiple historical stock market datasets collected from **Yahoo Finance**.
+This project uses a curated stock market dataset created by integrating multiple publicly available historical stock market datasets from Kaggle. The datasets were organized into a unified collection to support data preprocessing, model training, evaluation, and deployment.
 
-### Included Datasets
+The curated dataset is publicly available on Kaggle and can be downloaded from the following link:
+
+**📥 Download the complete dataset:**  
+[Kaggle - Stock Market Datasets](https://www.kaggle.com/datasets/bijoybhadra/stock-market-datasets)
+
+---
+
+## Included Datasets
 
 | Dataset | Description |
 |----------|-------------|
-| 🇺🇸 US500 | Major US-listed companies |
-| 🇮🇳 NIFTY50 | Top Indian stock market companies |
-| 🌍 7000Stocks | Large-scale international stock dataset |
+| 🇺🇸 US500 | Historical stock market data for major U.S. listed companies |
+| 🇮🇳 NIFTY50 | Historical stock market data for NIFTY 50 companies |
+| 🌍 7000Stocks | Large-scale historical stock market dataset containing thousands of companies |
+
+> **Note:** The dataset is a curated compilation of multiple publicly available Kaggle datasets. Credit belongs to the original dataset creators for the source data, while this repository provides the integrated dataset used in this project.
 
 ---
 
 ## Dataset Attributes
 
-Each dataset contains the following information:
+Each dataset contains the following features:
 
 | Feature | Description |
 |----------|-------------|
-| Date | Trading Date |
-| Open | Opening Price |
-| High | Highest Price |
-| Low | Lowest Price |
-| Close | Closing Price |
-| Volume | Trading Volume |
+| Date | Trading date |
+| Open | Opening price |
+| High | Highest trading price |
+| Low | Lowest trading price |
+| Close | Closing price |
+| Volume | Trading volume |
 
 ---
 
-## Dataset Note
+## Dataset Availability
 
-> Due to GitHub storage limitations, the complete datasets are **not included** in this repository.
+Due to GitHub's file size limitations, the complete datasets are **not included** in this repository.
 
-Instead, this repository provides:
+Instead, the repository provides:
 
 - Sample datasets
 - Stock ticker list
 - Data preprocessing pipeline
+- Instructions for downloading the complete dataset
 
-The complete datasets can be regenerated using **Yahoo Finance (`yfinance`)**.
+The complete curated dataset can be downloaded from the Kaggle link provided above.
 
 ---
 
