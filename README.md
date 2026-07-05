@@ -558,6 +558,20 @@ Interactive Dashboard
 
 The project includes a modern web application for real-time stock prediction and visualization.
 
+## 📱 Application Preview
+
+| Home | Prediction |
+|------|------------|
+| <img src="screenshots/Home.png" width="100%"> | <img src="screenshots/Prediction.png" width="100%"> |
+
+| Charts (Overview) | Charts (Analytics) |
+|-------------------|--------------------|
+| <img src="screenshots/Charts_1.png" width="100%"> | <img src="screenshots/Charts_2.png" width="100%"> |
+
+| | Mobile View | |
+|:---:|:---:|:---:|
+| | <img src="screenshots/Mobile.png" width="45%"> | |
+
 ## Backend
 
 - FastAPI
@@ -574,20 +588,6 @@ The project includes a modern web application for real-time stock prediction and
 - CSS3
 - JavaScript
 - Chart.js
-
----
-
-## Dashboard Features
-
-- 🔍 Searchable Stock Selector
-- 📈 Stock Price Prediction
-- 📉 Actual vs Predicted Price
-- 📊 Prediction Summary Cards
-- 📈 Rolling Direction Accuracy
-- 📉 Residual Error Analysis
-- 📊 Prediction Error Density
-- 📈 Direction Comparison Chart
-- ⚡ Responsive User Interface
 
 ---
 
@@ -614,28 +614,27 @@ The project includes a modern web application for real-time stock prediction and
 
 Both implementations generate comprehensive evaluation results.
 
-## Traditional Models
+## 📘 Traditional Models
 
-- Actual vs Predicted Price
-- Closing Price Trend
-- Model Comparison
-- Training & Validation Loss
-- Residual Error
-- Direction Movement
-- SHAP Summary
-- Prediction Error Analysis
+<p align="center">
+<img src="traditional_models/results/evaluation/model-performance-comparison.png" width="90%">
+</p>
 
 ---
 
-## Advanced Models
+## 📗 Advanced Models
 
-- Actual vs Predicted Price
-- Residual Error
-- Rolling Direction Accuracy
-- Prediction Error Density
-- Actual vs Predicted Direction
-- Interactive Dashboard
-- Live Forecast Visualization
+<p align="center">
+<img src="advanced_models/results/evaluation/model-comparison.png" width="90%">
+</p>
+
+---
+
+## 🧠 Explainable AI
+
+<p align="center">
+<img src="advanced_models/results/shap/shap-waterfall-plot.png" width="90%">
+</p>
 
 ---
 
