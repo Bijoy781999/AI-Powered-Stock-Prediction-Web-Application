@@ -1,4 +1,11 @@
-# 🚀 AI-Powered Stock Market Prediction Web Application
+<div>
+  <h1 align="center">
+    <img src="assets/logo.png" width="50" align="center"> AI-Powered Stock Market Prediction Web Application
+  </h1>
+</div>
+<p align="center">
+  <img src="assets/banner.png" width="100%">
+</p>
 
 > **An End-to-End Intelligent Stock Market Forecasting System using Deep Learning, State-Space Models, and Modern Web Technologies**
 
@@ -264,36 +271,9 @@ LSTM     GRU    CNN-LSTM   TimeMachine         iTransformer
 
 # 🏗 System Architecture
 
-```text
-                 User
-                  │
-                  ▼
-         Interactive Dashboard
-      (HTML • CSS • JavaScript)
-                  │
-                  ▼
-            FastAPI Backend
-                  │
-      ┌───────────┼───────────┐
-      │                       │
-      ▼                       ▼
- Local Historical Data   Live Yahoo Finance
-      │                       │
-      └───────────┬───────────┘
-                  ▼
-         Feature Engineering
-                  │
-                  ▼
-        Automatic Model Selection
-                  │
-                  ▼
-        TimeMachine / iTransformer
-                  │
-                  ▼
-          Stock Price Prediction
-                  │
-                  ▼
-      Interactive Performance Charts
+<p align="center">
+<img src="docs/system_architecture.png">
+</p>
 ```
 
 ---
