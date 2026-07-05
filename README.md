@@ -266,6 +266,11 @@ LSTM     GRU    CNN-LSTM   TimeMachine         iTransformer
                                           ▼
                           Interactive Prediction Dashboard
 ```
+## 🔁 WorkFlow (Phase-II)
+
+<p align="center">
+<img src="docs/workflow.png">
+</p>
 
 ---
 
@@ -274,6 +279,7 @@ LSTM     GRU    CNN-LSTM   TimeMachine         iTransformer
 <p align="center">
 <img src="docs/system_architecture.png">
 </p>
+
 ```
 
 ---
