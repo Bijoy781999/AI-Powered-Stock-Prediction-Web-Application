@@ -280,8 +280,6 @@ LSTM     GRU    CNN-LSTM   TimeMachine         iTransformer
 <img src="docs/system_architecture.png">
 </p>
 
-```
-
 ---
 
 # 📊 Dataset
